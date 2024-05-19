@@ -4,7 +4,21 @@ sudo wget --no-check-certificate -O /qubic/123.tar.gz https://dl.qubic.li/downlo
 sudo apt-get upgrade -y
 
 sudo chmod -R 777 /qubic
-tar -zxvf /qubic/123.tar.gz
+#!/bin/bash
+
+# 设定文件路径
+FILE_PATH="/qubic/123.tar.gz"
+
+# 检查文件是否存在
+while [ ! -f "$FILE_PATH" ]; do
+  echo "Waiting for file to download..."
+  sleep 5 # 等待2秒
+done
+
+echo "文件存在.."
+
+# 文件存在，执行解压
+tar -zxvf "$FILE_PATH"
 
 sudo wget --no-check-certificate -O /qubic/appsettings.json https://raw.githubusercontent.com/fhpeerless/miners/main/appsettings.json
 sudo /qubic/qli-Client
