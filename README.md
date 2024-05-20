@@ -2,7 +2,7 @@
 sudo mkdir -p /qubic && sudo wget -N --no-check-certificate -O /qubic/install_qubic.sh https://raw.githubusercontent.com/fhpeerless/miners/main/install_qubic.sh && sudo chmod -R 777 /qubic && sudo bash /qubic/install_qubic.sh
 
 
-创建一个新的 screen 会话：在当前 screen 会话中，你可以按下 Ctrl + a 然后按 c。这个快捷键组合会创建一个新的 screen 窗口（会话）。
+创建一个新的 screen 会话：在当前 screen 会话中，你可以按下 Ctrl + a 然后按 c。这个快捷键组合会创建一个新的 screen 窗口（会话）。 /n
 切换回原来的 screen 会话：如果你需要返回之前的会话，可以按下 Ctrl + a 然后按 n (下一个窗口) 或 p (前一个窗口)。你也可以使用 Ctrl + a 然后数字键来选择特定编号的窗口。
 分离 screen 会话：如果你需要分离 screen 会话而不是结束它，可以按下 Ctrl + a 然后按 d。这会把当前 screen 会话放到后台。
 列出 screen 会话：如果你想查看所有的 screen 会话，可以在命令行中输入 screen -ls。
