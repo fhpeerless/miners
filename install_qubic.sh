@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo wget --no-check-certificate -O /qubic/123.tar.gz https://dl.qubic.li/downloads/qli-Client-1.9.7-Linux-x64.tar.gz
-sudo apt-get upgrade -y
+# sudo apt-get upgrade -y
 
 sudo chmod -R 777 /qubic
 #!/bin/bash
