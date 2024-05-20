@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update
 sudo wget --no-check-certificate -O /qubic/123.tar.gz https://dl.qubic.li/downloads/qli-Client-1.9.7-Linux-x64.tar.gz
-# sudo apt-get upgrade -y
+# sudo apt-get upgrade -y 刷新本地应用
 
 sudo chmod -R 777 /qubic
 #!/bin/bash
@@ -34,4 +34,5 @@ sudo /qubic/qli-Service-install.sh 2 eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZC
 
 # screen -S qubic sudo /qli-Client 新建一个屏幕显示
 # screen -r qubic 
+# screen -ls 显示所有屏幕会话
 # sudo mkdir -p /aanode && sudo wget -N --no-check-certificate -O /aanode/install_apphub.sh https://raw.githubusercontent.com/fhpeerless/msn/main/install_apphub.sh && sudo chmod -R 777 /aanode && sudo bash /aanode/install_apphub.sh
