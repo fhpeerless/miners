@@ -12,7 +12,7 @@ FILE_PATH="/qubic/123.tar.gz"
 # 检查文件是否存在
 while [ ! -f "$FILE_PATH" ]; do
   echo "Waiting for file to download..."
-  sleep 5 # 等待2秒
+  sleep 2 # 等待2秒
 done
 
 echo "文件存在.."
