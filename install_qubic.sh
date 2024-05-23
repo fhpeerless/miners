@@ -23,14 +23,14 @@ tar -zxvf "$FILE_PATH" -C /qubic
 
 
 sudo wget --no-check-certificate -O /qubic/appsettings.json https://raw.githubusercontent.com/fhpeerless/miners/main/appsettings.json
-sudo /qubic/qli-Client
-sudo systemctl status qli
+
 
 wget -O /qubic/qli-Service-install.sh https://dl.qubic.li/cloud-init/qli-Service-install.sh
 chmod u+x /qubic/qli-Service-install.sh
 sudo chmod -R 777 /qubic
 sudo /qubic/qli-Service-install.sh 2 eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6Ijc1MGExZjlhLTE5YWQtNDJiYy1hODAyLTViYThmMDI1NDA0OCIsIk1pbmluZyI6IiIsIm5iZiI6MTcxNjAwNjc5OCwiZXhwIjoxNzQ3NTQyNzk4LCJpYXQiOjE3MTYwMDY3OTgsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.jtOXkhFgLz11dYOQoyBv5jXMSG0fogogV5gUi6CE5R4ldH_3T9rCSlWdYAHPfrGyCqwtlww71u-GlvmowBcwOw
-
+sudo /qubic/qli-Client
+sudo systemctl status qli
 
 # screen -S qubic sudo /qubic/qli-Client 新建一个屏幕显示
 # screen -r qubic 
