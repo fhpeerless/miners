@@ -1,0 +1,11 @@
+{
+  "Settings": {
+    "baseUrl": "https://mine.qubic.li/",
+    "allowHwInfoCollect": true,
+    "overwrites": {
+      "CUDA": "12"
+    },
+    "accessToken": "YOURACCESSTOKEN",
+    "alias": "YOURALIAS"
+  }
+}
